@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+   <link rel="stylesheet" type="text/css" href="../mumbai/style.css">
+
+   <title>Travel2Day</title>
+</head>
+
+<body class="background" >
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="../mumbai/logotravel.png">
+            </div>
+            <li><a href="index.html" class="navicon"><img src="homeicon.png"></a></li>
+            <li><a href="subscribe.html" class="navicon"><img src="subscribeicon.png"></a></li>
+            <li><a href="booking.html" class="navicon"><img src="bookingsicon.png"></a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <button class="button" id="signup"><a href="#"> SIGN UP </a></button>
+            <button class="button" id="login"><a href="login.html"> LOGIN </a></button>
+        </div>
+    </nav>
+
+    <section class="firstsection">
+        <div class="box-main1">
+            <div class="firstHalf">
+                <h1 class="text-big">
+                    Login
+                </h1>
+                <br>
+                <form class="text-small" action="loginsuccess.html" method="GET">
+                  <fieldset>
+                  <legend>Details:</legend>
+
+                  <div>
+                  <label for="firstname">Enter Your First Name:<span style="color:red">*</span></label>
+                  <br>
+                  <input type="text" id="firstname" name="firstname" placeholder="eg. Rochelle" required>
+                  </div><br>
+
+                  <div>
+                  <label for="lastname">Enter Your Last Name:<span style="color:red">*</span></label>
+                  <br>
+                  <input type="text" id="lastname" name="lastname" placeholder="eg. Fernandes"  required>
+                  </div><br>
+
+                  <div>
+                  <label for="mail">Enter Your E-mail Address:<span style="color:red">*</span></label>
+                  <br>
+                  <input type="email" id="mail" name="mail" required>
+                  </div><br>
+
+                  <div>
+                  <label for="acc_pword">Enter Your Password:<span style="color:red">*</span></label>
+                  <br>
+                  <input type="Password" id="acc_pword" name="acc_pword" required>
+                  </div><br>
+
+                  <input type="reset" name="reset" value="RESET" class="button">
+                  <input type="submit" name="login" value="LOGIN" class="button">
+
+                  </fieldset>
+                  <br>
+                   <span style="color:red">*</span><span>This means required field.</span>
+                  </form>
+                
+                
+            </div>
+         </div>
+  </section>
+
+  <footer class="background">
+        <p class= "text-small">
+            Copyright ©-All rights are reserved
+        </p>
+  
+</body>
+</html>

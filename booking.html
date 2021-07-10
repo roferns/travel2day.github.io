@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+
+   <link rel="stylesheet" type="text/css" href="../mumbai/style.css">
+
+   <title>Travel2Day</title>
+</head>
+
+<body class="background" >
+    <nav class="navbar background">
+        <ul class="nav-list">
+            <div class="logo">
+                <img src="../mumbai/logotravel.png">
+            </div>
+            <li><a href="index.html" class="navicon"><img src="homeicon.png"></a></li>
+            <li><a href="subscribe.html" class="navicon"><img src="subscribeicon.png"></a></li>
+            <li><a href="booking.html" class="navicon"><img src="bookingsicon.png"></a></li>
+        </ul>
+ 
+        <div class="rightNav">
+            <button class="button" id="signup"><a href="#"> SIGN UP </a></button>
+            <button class="button" id="login"><a href="login.html"> LOGIN </a></button>
+        </div>
+    </nav>
+
+
+
+   <section class="firstsection">
+        <div class="box-main1">
+            <div class="firstHalf">
+                <h1 class="text-big">
+                    Book Your Hotel 
+                </h1>
+                <br>
+                <form class="text-small" action="booked.html" method="GET">
+                  <fieldset>
+                  <legend>Personal Details</legend>
+
+                  <div>
+                  <label for="firstname">Enter Your First Name:<span style="color:red">*</span></label>
+                  <br>
+                  <input type="text" id="firstname" name="firstname" placeholder="eg. Rochelle" required>
+                  </div><br>
+
+                  <div>
+                  <label for="lastname">Enter Your Last Name:<span style="color:red">*</span></label>
+                  <br>
+                  <input type="text" id="lastname" name="lastname" placeholder="eg. Fernandes"  required>
+                  </div><br>
+
+                   Gender:<span style="color:red">*</span>
+                   <div>
+                  <label for="gender">Female:</label>
+                  <input type="radio" name="gender" id="female" value="female" required><br>
+                  <label for="gender">Male:</label>
+                  <input type="radio"name="gender" id="male" value="male"><br>
+                  <label for="gender">Other:</label>
+                  <input type="radio" name="gender" id="other" value="other">
+                  </div><br>
+
+                  <div>
+                  <label for="age">Enter Your Date Of Birth:<span style="color:red">*</span></label>
+                  <input type="date" id="age" name="dob" required>
+                  </div><br>
+
+                  <div>
+                  <label for="mail">Enter Your E-mail Address:<span style="color:red">*</span></label>
+                  <br>
+                  <input type="email" id="mail" name="mail" required>
+                  </div><br>
+
+                  <div>
+                  <label for="mob_no">Enter 10 Digit Mobile Number:<span style="color:red">*</span></label>
+                  <br>
+                  <input type="tel" id="mob_no" name="mob_no" required>
+                  </div><br>
+
+                  <div>
+                  <label for="id_proof">Upload A Document As An ID Proof:<span style="color:red">*</span></label><br>
+                  <input type="file" id="id_proof" name="id_proof" required>
+                  <div><br>
+                  
+                  </fieldset>
+                  <br>
+
+
+                  <fieldset><legend>Booking Details</legend>
+
+                  <div>
+                  <label for="city">Select City:<span style="color:red">*</span></label>
+                  <select id="city" name="city" required>
+                  <option value="mumbai">Mumbai</option>
+                  <option value="goa">Goa</option>
+                  <option value="banglore">Banglore</option>
+                  <option value="delhi">Delhi</option>
+                  <option value="pune">Pune</option>
+                  </select>
+                  </div>
+                  <br>
+                  <div>
+                  <label for="check_in">Check In:<span style="color:red">*</span></label>
+                  <input type="date" id="check_in" name="check_in" required>
+                  </div>
+                  <br>
+                  <div>
+                  <label for="check_out">Check Out:<span style="color:red">*</span></label>
+                  <input type="date" id="check_out" name="check_out" required>
+                  </div>
+
+                  <div>
+                  <label for="quantity_guest">Number Of Guests:<span style="color:red">*</span></label>
+                  <select id="quantity_guest" name="quantity_guest" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  </select>
+                  </div>
+
+                   Extra Services:
+                  <div>
+                  <label for="wifi">24/7 Wifi:</label>
+                  <input type="Checkbox" id="wifi" name="breakfast">
+                  <label for="breakfast">Breakfast:</label>
+                  <input type="Checkbox" id="breakfast" name="breakfast">
+                  <label for="tour_services">Tour Services:</label>
+                  <input type="Checkbox" id="tour_services" name="tour_services">
+                  </div>
+
+                  <div>
+                  <input type="reset" name="reset" value="RESET" class="button">
+                  <input type="submit" name="submitform" value="SUBMIT" class="button">
+                  </div>
+
+                  <input type="hidden" name="hiddenc" value="pass">
+                  
+                  </fieldset>
+                  <br>
+                   <span style="color:red">*</span><span>This means required field.</span>
+
+                  
+                </form>
+ 
+            </div>
+         </div>
+  </section>
+
+      <footer class="background">
+        <p class= "text-small">
+            Copyright ©-All rights are reserved
+        </p>
+
+</body>
+</html>
